@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIRETÓRIO DE IMGS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E1E6EF;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            background-color: #E02D3C;
+            width: 200px;
+            padding: 20px;
+            color: white;
+            height: 100%;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            color: white;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #C02430;
+        }
+        .main {
+            flex-grow: 1;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 150px;
+            }
+            .sidebar a {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Diretório de Imagens</h2>
+        <a href="repositorio/logos/logos.html" target="contentFrame">LOGOS</a>
+        <a href="repositorio/home/carrossel/carrossel.html" target="contentFrame">CARROSSEL</a>
+        <a href="repositorio/produtos/produtos.html" target="contentFrame">PRODUTOS</a>
+        <a href="repositorio/home/outros/outros.html" target="contentFrame">OUTROS</a>
+    </div>
+
+    <div class="main">
+        <iframe src="repositorio/produtos/produtos.html" name="contentFrame"></iframe>
+    </div>
+</body>
+</html>

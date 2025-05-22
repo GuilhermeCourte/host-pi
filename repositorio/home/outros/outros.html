@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E1E6EF;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .main {
+            flex-grow: 1;
+            padding: 30px;
+            background-color: #fff;
+            height: 100%;
+            overflow-y: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #E02D3C;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #E02D3C;
+            border-radius: 8px;
+            max-height: 200px;
+        }
+        a {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #E02D3C;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #C02430;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 150px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            img {
+                max-height: 150px;
+            }
+            a {
+                font-size: 14px;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <h1>OUTROS</h1>
+        <ul>
+           
+            <li><img src="imgs/imgs-consolidada.png" alt="imgs-consolidada"></li>
+            <li><img src="imgs/skatista.png" alt="imgs-consolidada"></li>
+        </ul>
+    </div>
+</body>
+</html>
